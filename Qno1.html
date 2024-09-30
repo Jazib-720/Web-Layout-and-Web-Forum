@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn more about Ableton - maker of Live and Push | Ableton</title>
+    <link rel="stylesheet" href="q1styles.css">
+</head>
+<body>
+    <header id="menu1">
+        <nav>
+            <ul class="nav-list">
+                <li class="logo">
+                    <div style="display: flex; align-items: center;">
+                        <img src="sideicon.png" alt="Line Bar" style="width: 35px; height: auto; transform: rotate(90deg);">
+                        <img src="sideicon.png" alt="Line Bar" style="width: 35px; height: auto;">
+                    </div>
+                </li>
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Push</a></li>
+                <li><a href="#">Note</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Packs</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">More+</a></li>
+                <li class="right-align">
+                    <a href="#">Try Live 12 for free</a>
+                    <a href="#">Login or register</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <header id="menu2">
+        <nav>
+            <ul class="nav-list">
+                <li class="logo">
+                    <div style="display: flex; align-items: center;">
+                        <img src="sideicon.png" alt="Line Bar" style="width: 35px; height: auto; transform: rotate(90deg);">
+                        <img src="sideicon.png" alt="Line Bar" style="width: 35px; height: auto;">
+                    </div>
+                </li>
+                <li>
+                    <label for="menu-select" class="menu-button"></label>
+                    <select id="menu-select" onchange="handleMenuChange()">
+                        <option value=""><b>Menu</b></option>
+                        <option value="#">Live</option>
+                        <option value="#">Push</option>
+                        <option value="#">Note</option>
+                        <option value="#">Link</option>
+                        <option value="#">Shop</option>
+                        <option value="#">Packs</option>
+                        <option value="#">Help</option>
+                        <option value="#">More+</option>
+                        <option value="#">Try Live 12 for free</option>
+                        <option value="#">Login or register</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div class="info-links">
+        <a href="#"  >About</a>
+        <a href="#">Jobs</a>
+        <a href="#">Apprenticeships</a>
+    </div>
+ 
+    <div class="image-container">
+        <img src="ab.avif" alt="Description of the image" class="fullpic">
+        <div class="overlay-text">Ableton</div>
+    </div>
+  
+    <script>
+    document.getElementById('toggleMenu').addEventListener('click', function() {
+        const menu = document.getElementById('menu2');
+        menu.style.display = menu.style.display === 'none' ? 'block' : 'none'; // Toggle visibility
+    });
+</script>
+   
+</body>
+
+</html>
